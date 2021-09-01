@@ -59,5 +59,5 @@ python manage.py runserver 0:8080
 ```
 
 ## TODO
-- [-] admin dashboard
-- [ ] add index
+- [x] admin dashboard
+- [x] add index
