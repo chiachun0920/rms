@@ -1,3 +1,18 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Resume, ResumeTemplate, JobExperience
+
+
+@admin.register(Resume)
+class ResumeAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(ResumeTemplate)
+class ResumeTemplate(admin.ModelAdmin):
+    pass
+
+
+@admin.register(JobExperience)
+class JobExperience(admin.ModelAdmin):
+    pass

@@ -41,6 +41,23 @@ id ────┘  └───────┬───────┘         
                          plan_name
 ```
 
+## Bootstrap Project
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# db migrations
+python manage.py migrate
+
+# create super user
+python manage.py createsuperuser
+
+# run local dev server
+python manage.py runserver 0:8080
+```
+
 ## TODO
-- [ ] admin dashboard
+- [-] admin dashboard
 - [ ] add index
