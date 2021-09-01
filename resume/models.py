@@ -51,3 +51,8 @@ class JobExperience(models.Model):
         blank=True,
         on_delete=models.CASCADE
     )
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['start_date', 'end_date'])
+        ]
